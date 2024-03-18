@@ -1,6 +1,9 @@
 name = input("what is your name?")
 age = input("what is your age?")
-print(name)
-print(age)
-print("Hello World!")
-
+try:
+    ageAsANumber = age.toInt()
+    print(ageAsANumber)
+    print(name)
+    print("Hello World!")
+except Exception as e:
+    print("Your age has to be an integer")
